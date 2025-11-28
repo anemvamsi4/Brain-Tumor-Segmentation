@@ -62,16 +62,12 @@ BCE was optimized using the Adam optimizer
 
 
 ## Results
-
-Training Loss	0.0310
-
-Test Loss	0.0334
-
-Best Model	U-Net + Adam + BCE loss
+The model trains for 15 epochs.
+- The best Model we got is `U-Net with Adam + BCE Loss`.
+- The model has achieved a `training loss = 0.0310` and a `test loss = 0.0334`.
 
 # Setup Instructions
 
-## Requirements
 To run this project, you need Python and the following libraries:
 - torch
 - numpy
@@ -89,12 +85,6 @@ pip install -r requirements.txt
 2. Place the dataset in the project folder.
 3. Open the notebook `BrainTumorSegmentation.ipynb`.
 4. Run all the cells to train the model and see results.
-
-## Results
-The model trains for 15 epochs.
-- It compares the predicted tumor area with the real one.
-- The training and validation loss graphs show the model's progress.
-- The final output shows the MRI scan with the **Ground Truth (Red)** and **Prediction (Green)**.
 
 ## Files
 - `BrainTumorSegmentation.ipynb`: The main code for training and testing.
