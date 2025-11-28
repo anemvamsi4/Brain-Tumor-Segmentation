@@ -69,4 +69,35 @@ Test Loss	0.0334
 
 Best Model	U-Net + Adam + BCE loss
 
+# Setup Instructions
 
+## Requirements
+To run this project, you need Python and the following libraries:
+- torch
+- numpy
+- pandas
+- tqdm
+- matplotlib
+
+Install them using pip:
+```bash
+pip install -r requirements.txt
+```
+
+## How to Run
+1. Download the dataset from Kaggle.
+2. Place the dataset in the project folder.
+3. Open the notebook `BrainTumorSegmentation.ipynb`.
+4. Run all the cells to train the model and see results.
+
+## Results
+The model trains for 15 epochs.
+- It compares the predicted tumor area with the real one.
+- The training and validation loss graphs show the model's progress.
+- The final output shows the MRI scan with the **Ground Truth (Red)** and **Prediction (Green)**.
+
+## Files
+- `BrainTumorSegmentation.ipynb`: The main code for training and testing.
+- `requirements.txt`: List of libraries needed.
+- `loss graph.png`: Graph showing training progress.
+- `predictions.png`: Images showing the model's results.
